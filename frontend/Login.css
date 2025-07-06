@@ -1,0 +1,166 @@
+/* .login {
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 3px solid rgba(57, 29, 29, 0.2);
+  backdrop-filter: blur(60px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-55px);
+  background-color:mintcream ;
+}
+.logo h1{
+  font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 2000px;
+    font-style: normal;
+    font-size: 90px;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
+}
+.login h2 {
+  margin-bottom: 20px;
+  color: #0e0000;
+  font-size: x-large;
+
+}
+
+.login input {
+  display: block;
+  width: 350px;
+  margin: 20px 10px;
+  padding: 15px;
+  background: transparent;
+  border: 2px solid #321a1a;
+  border-radius: 20px;
+  color: #321a1a;
+  font-size: medium;
+}
+
+.login button {
+  width: 100px;
+  padding: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: #0056b3;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo h1 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700; 
+  font-style: normal;
+  font-size: 90px;
+  color: #060000;
+  margin: 0;
+  text-shadow: 4px 4px 4px rgba(82, 65, 65, 0.1);
+}
+
+.login {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #cfe6ee;
+  backdrop-filter: blur(60px);
+  border: 3px solid rgba(57, 29, 29, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* background: transparent; */
+  border-radius: 20px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+
+.login h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login input {
+  padding: 15px;
+  background: #cfe6ee;
+
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.login input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.login button {
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+  background-color: #0056b3;
+}
+
+.login button:active {
+  transform: translateY(1px);
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 60px;
+  }
+  
+  .login {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+}
